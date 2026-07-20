@@ -42,3 +42,26 @@ The project objectives and dataset structure are clearly documented, providing a
 - Git & GitHub
 
 ---
+
+# Day 3 – Dataset Profiling
+
+## Objective
+Perform an initial profile of the dataset to understand its structure and identify potential data quality issues before cleaning.
+
+## Tasks Completed
+- Checked the total number of rows and columns.
+- Inspected data types of all 19 columns.
+- Identified missing values for each column.
+- Checked duplicate records using the `norad_id` column.
+
+## Key Findings
+- Dataset contains **16,649 rows** and **19 columns**.
+- Only **2 missing values** were found in the dataset:
+  - `object_type`
+  - `country`
+- No duplicate records were identified based on `norad_id`.
+
+## Outcome
+The dataset structure has been successfully profiled, providing a clear understanding of its size, completeness, and uniqueness before proceeding to data quality assessment.
+
+___
