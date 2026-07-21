@@ -65,3 +65,20 @@ Perform an initial profile of the dataset to understand its structure and identi
 The dataset structure has been successfully profiled, providing a clear understanding of its size, completeness, and uniqueness before proceeding to data quality assessment.
 
 ___
+
+# Day 4 – Data Quality Assessment
+
+## Objective
+Assess the quality of the dataset before cleaning by identifying data type issues, invalid values, and category inconsistencies.
+
+## Tasks Completed
+- Verified data types.
+- Checked for malformed values.
+- Reviewed invalid numeric values.
+- Inspected category consistency.
+- Documented findings.
+
+## Outcome
+The dataset quality was assessed successfully and is ready for the data cleaning phase.
+
+---
