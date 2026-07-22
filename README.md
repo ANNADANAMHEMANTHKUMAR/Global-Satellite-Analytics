@@ -82,3 +82,53 @@ Assess the quality of the dataset before cleaning by identifying data type issue
 The dataset quality was assessed successfully and is ready for the data cleaning phase.
 
 ---
+
+# Day 5 – Data Cleaning Plan
+
+## Objective
+
+The objective of Day 5 was to prepare a structured data cleaning plan before modifying the dataset. This included identifying data quality issues, deciding appropriate cleaning strategies, and documenting all cleaning decisions.
+
+---
+
+## Tasks Completed
+
+- Created the Data Cleaning Plan (Version 1).
+- Reviewed missing values identified during the data quality assessment.
+- Decided Keep, Drop, and Impute rules for affected columns.
+- Documented duplicate handling strategy.
+- Reviewed data types and category consistency.
+- Finalized and documented the cleaning strategy.
+
+---
+
+## Cleaning Decisions
+
+| Column / Issue | Decision | Reason |
+|---------------|----------|--------|
+| object_type | Impute | Replace missing values with `UNKNOWN` to preserve all records. |
+| country | Impute | Replace missing values with `UNKNOWN` because the original value is unavailable. |
+| Duplicate Records | Keep | No duplicate NORAD IDs were found. |
+| Data Types | Keep | All columns have appropriate data types. |
+| Category Consistency | Keep | Categories are already standardized. |
+| Invalid Values | Keep | No invalid numerical values were identified. |
+
+---
+
+## Files Created
+
+- `docs/cleaning_plan_v1.md`
+
+---
+
+## Key Learnings
+
+- Understood the importance of planning data cleaning before modifying a dataset.
+- Learned when to use Keep, Drop, and Impute strategies.
+- Practiced documenting cleaning decisions for reproducibility and transparency.
+
+---
+
+## Outcome
+
+A complete Data Cleaning Plan (Version 1) was prepared and documented. The dataset is now ready for implementation of the cleaning process in Day 6.
