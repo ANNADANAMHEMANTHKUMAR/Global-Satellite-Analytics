@@ -132,3 +132,30 @@ The objective of Day 5 was to prepare a structured data cleaning plan before mod
 ## Outcome
 
 A complete Data Cleaning Plan (Version 1) was prepared and documented. The dataset is now ready for implementation of the cleaning process in Day 6.
+
+---
+
+# Day 6 - Data Cleaning Implementation
+
+## Objective
+Apply the planned data cleaning actions and validate the cleaned dataset.
+
+## Tasks Completed
+- Opened current_catalog.csv in Google Sheets.
+- Applied filters to inspect categorical columns.
+- Replaced missing values in `object_type` with `UNKNOWN`.
+- Replaced missing values in `country` with `UNKNOWN`.
+- Verified object_type categories.
+- Verified altitude_category categories.
+- Confirmed eccentricity values are within the valid range (0–1).
+- Validated that the final row count remained unchanged.
+
+## Results
+- Missing values handled successfully.
+- No duplicate records removed.
+- No data type changes required.
+- Category values remained consistent.
+- Final row count: **16,649**.
+
+## Conclusion
+The dataset was cleaned according to the approved cleaning plan and validated successfully without any data loss.
