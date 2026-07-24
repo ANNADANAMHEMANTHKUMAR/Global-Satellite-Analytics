@@ -159,3 +159,49 @@ Apply the planned data cleaning actions and validate the cleaned dataset.
 
 ## Conclusion
 The dataset was cleaned according to the approved cleaning plan and validated successfully without any data loss.
+
+---
+
+# Day 7 – Pivot Table Analysis & Initial Insights
+
+## Objective
+Perform exploratory analysis using Excel Pivot Tables to summarize the cleaned satellite dataset and identify initial insights.
+
+## Tasks Completed
+
+- Created Pivot Table for **Object Type vs Average Mean Motion**
+- Created Pivot Table for **Altitude Category vs Average Mean Motion**
+- Created Pivot Table for **Country vs Average Mean Motion**
+- Created Pivot Table for **Eccentricity vs Average Mean Motion**
+- Documented five initial observations from the pivot table analysis
+- Exported the cleaned Excel workbook to the `data/processed` directory
+- Committed and pushed all changes to GitHub
+
+## Pivot Tables Created
+
+1. Object Type → Average Mean Motion
+2. Altitude Category → Average Mean Motion
+3. Country → Average Mean Motion
+4. Eccentricity → Average Mean Motion
+
+## Key Insights
+
+1. PAYLOAD satellites have a higher average mean motion than DEBRIS and ROCKET BODY satellites.
+2. Very Low LEO satellites have the highest average mean motion, while GEO and Beyond GEO satellites have the lowest.
+3. Average mean motion varies across countries, indicating differences in orbital characteristics.
+4. Most satellites have very low eccentricity values, suggesting nearly circular orbits.
+5. Mean motion changes significantly based on object type, altitude category, country, and eccentricity.
+
+## Deliverables
+
+- Pivot Table Analysis
+- Excel Summary Sheet
+- Initial Insights
+- Cleaned Excel Workbook
+- GitHub Repository Updated
+
+## Status
+
+✅ Day 7 Completed Successfully
+
+---
