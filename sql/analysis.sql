@@ -1,8 +1,8 @@
 USE satellite_db;
 
--- No lookup tables available in the current dataset.because we have one table
+-- No lookup tables available in the current dataset.because we have one table.
 
--- Aggregations
+-- Aggregations.
 
 -- Average Mean Motion by Object Type.
 SELECT
@@ -41,37 +41,37 @@ ORDER BY eccentricity;
 
 -- KPI queries
 
--- Total Satellites
+-- Total Satellites.
 SELECT COUNT(*) AS total_satellites
 FROM current_catalog;
 
--- Total Countries
+-- Total Countries.
 SELECT COUNT(DISTINCT country) AS total_countries
 FROM current_catalog;
 
--- Average Mean Motion
+-- Average Mean Motion.
 SELECT ROUND(AVG(mean_motion),2) AS average_mean_motion
 FROM current_catalog;
 
--- Average Altitude
+-- Average Altitude.
 SELECT ROUND(AVG(altitude_km),2) AS average_altitude
 FROM current_catalog;
 
--- Total Payloads
+-- Total Payloads.
 SELECT COUNT(*) AS total_payloads
 FROM current_catalog
 WHERE object_type='PAYLOAD';
 
--- Total Debris
+-- Total Debris.
 SELECT COUNT(*) AS total_debris
 FROM current_catalog
 WHERE object_type='DEBRIS';
 
--- Highest Mean Motion
+-- Highest Mean Motion.
 SELECT MAX(mean_motion) AS highest_mean_motion
 FROM current_catalog;
 
--- Lowest Mean Motion
+-- Lowest Mean Motion.
 SELECT MIN(mean_motion) AS lowest_mean_motion
 FROM current_catalog;
 

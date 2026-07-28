@@ -205,3 +205,66 @@ Perform exploratory analysis using Excel Pivot Tables to summarize the cleaned s
 ✅ Day 7 Completed Successfully
 
 ---
+# Day 8 - SQL Database Setup
+
+## Objective
+Import the cleaned satellite dataset into MySQL and prepare the database for analysis.
+
+## Tasks Completed
+- Created a new database `satellite_db`.
+- Imported `current_catalog.csv` into MySQL Workbench.
+- Verified that `norad_id` contained no duplicate values.
+- Verified that `norad_id` contained no NULL values.
+- Set `norad_id` as the Primary Key.
+- Checked that `object_type` and `country` contained no NULL values.
+- Generated and documented the database schema in `schema.sql`.
+
+## SQL Operations
+- CREATE DATABASE
+- Import CSV
+- ALTER TABLE (Primary Key)
+- Duplicate validation
+- NULL validation
+- Schema documentation
+
+## Outcome
+Successfully created a validated SQL database ready for analysis.
+
+✅ Day 8 Completed Successfully
+
+---
+
+# Day 9 - SQL Analysis & KPI Queries
+
+## Objective
+Analyze the satellite dataset using SQL queries and generate key performance metrics.
+
+## Tasks Completed
+- Created aggregation queries using `GROUP BY`.
+- Calculated average `mean_motion` by:
+  - Object Type
+  - Altitude Category
+  - Eccentricity
+- Counted satellites by country.
+- Created KPI queries for:
+  - Total satellites
+  - Total countries
+  - Average mean motion
+  - Total payloads
+  - Total debris
+- Saved all analysis queries in `queries.sql`.
+
+## SQL Concepts Used
+- SELECT
+- GROUP BY
+- COUNT()
+- AVG()
+- ORDER BY
+
+## Outcome
+Generated SQL-based insights and KPIs to support the satellite analytics dashboard.
+
+✅ Day 9 Completed Successfully
+
+---
+
