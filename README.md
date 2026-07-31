@@ -268,3 +268,36 @@ Generated SQL-based insights and KPIs to support the satellite analytics dashboa
 
 ---
 
+### Day 10 - SQL Views & Window Functions
+- Created SQL views for key performance indicators.
+- Implemented window functions:
+  - `RANK()`
+  - `LAG()`
+  - `LEAD()`
+  - Running Totals using `SUM() OVER()`
+- Added SQL documentation in `sql/README.md`.
+
+---
+
+### Day 11 - Data Cleaning with Pandas
+- Reproduced the data cleaning workflow in Pandas.
+- Filled missing values in `object_type` and `country`.
+- Validated row counts using assertions.
+- Verified null counts after cleaning.
+- Saved the cleaned dataset.
+- Updated `01_clean.ipynb`.
+
+---
+
+### Day 12 - Exploratory Data Analysis (EDA)
+- Performed summary statistics on `mean_motion`.
+- Visualized the distribution of `mean_motion`.
+- Analyzed country-wise satellite distribution.
+- Performed segment analysis by:
+  - `object_type`
+  - `altitude_category`
+  - `eccentricity`
+- Explored `launch_year_estimate` and `days_in_orbit_estimate`.
+- Documented analysis in `02_eda.ipynb`.
+
+--- 
