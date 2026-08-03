@@ -301,3 +301,68 @@ Generated SQL-based insights and KPIs to support the satellite analytics dashboa
 - Documented analysis in `02_eda.ipynb`.
 
 --- 
+
+# Day 13 - Outlier Analysis and Data Visualization
+
+## Objective
+
+Perform outlier detection on the cleaned satellite dataset, create meaningful visualizations, and derive dataset-based insights.
+
+---
+
+## Tasks Completed
+
+### 1. Outlier Analysis
+
+- Performed outlier detection on the `mean_motion` column using the **Interquartile Range (IQR)** method.
+- Verified outliers using the **Z-score** method.
+- Analyzed the `country` column using frequency counts to identify countries with the highest number of satellites.
+
+---
+
+### 2. Data Visualization
+
+Created four charts to better understand the dataset:
+
+- Histogram showing the distribution of `mean_motion`
+- Line chart showing launch year trends
+- Bar chart comparing satellite counts by `object_type`
+- Pie chart showing the composition of `altitude_category`
+
+---
+
+### 3. Dataset Insights
+
+Derived five key insights from the exploratory analysis, including:
+
+- Majority of satellites are in **Very Low LEO**
+- United States has the highest satellite count
+- Payloads are the most common object type
+- Only a small number of outliers exist in `mean_motion`
+- Satellite launches show growth across different years
+
+---
+
+## Output
+
+- Performed outlier detection using IQR and Z-score methods.
+- Generated four visualization charts.
+- Documented five dataset-grounded insights.
+- Updated `notebooks/02_eda.ipynb`.
+
+---
+
+## Files Updated
+
+```
+notebooks/02_eda.ipynb
+README.md
+```
+
+---
+
+## Status
+
+✅ Day 13 tasks completed successfully.
+
+---
