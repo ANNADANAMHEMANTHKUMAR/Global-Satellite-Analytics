@@ -366,3 +366,21 @@ README.md
 ✅ Day 13 tasks completed successfully.
 
 ---
+
+## Day 14 - Descriptive Statistics & Distribution Analysis
+
+### Tasks Completed
+- Performed descriptive statistics on the `mean_motion` column.
+- Analyzed country-wise satellite distribution.
+- Generated a histogram to visualize mean motion distribution.
+- Calculated skewness and kurtosis for the mean motion feature.
+- Created a bar chart showing the top countries by satellite count.
+- Documented sampling caveats for the dataset.
+
+### Tools Used
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+
+--- 
