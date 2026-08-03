@@ -384,3 +384,44 @@ README.md
 - Jupyter Notebook
 
 --- 
+
+## Day 15 - Correlation, Variance Analysis & Hypothesis Validation
+
+### Objectives
+- Analyze correlations among numerical features.
+- Perform variance analysis across different satellite categories.
+- Validate the project hypothesis and document interpretations and limitations.
+
+### Work Completed
+- Generated a correlation matrix for all numerical columns.
+- Visualized the correlation matrix using a heatmap.
+- Performed variance analysis of `mean_motion` grouped by:
+  - `object_type`
+  - `altitude_category`
+- Calculated the variance of the `eccentricity` column.
+- Compared the average `mean_motion` across different object types.
+- Documented the project hypothesis, interpretation, and analysis limitations in the notebook.
+
+### Key Findings
+- Correlation analysis showed the relationships between numerical satellite features.
+- The average `mean_motion` varies across different object types.
+- Variance differs among altitude categories, indicating variation in orbital characteristics.
+- Country was excluded from the correlation matrix because it is a categorical feature.
+
+### Limitations
+- The dataset is a snapshot of currently available satellite records.
+- Correlation does not imply causation.
+- Country is a categorical feature and cannot be directly used in numerical correlation analysis.
+- Results may change as new satellite records become available.
+
+### Files Updated
+
+```
+notebooks/04_correlation_analysis.ipynb
+README.md
+```
+
+### Status
+✅ Day 15 completed successfully.
+
+---
