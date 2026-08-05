@@ -1,0 +1,1178 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='current_catalog_cleaned' inline='true' name='federated.0furslk16n2oja138vbea10nit4j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='current_catalog_cleaned' name='textscan.082ko270d88a71197b6vx1wb8ogi'>
+            <connection class='textscan' directory='/Users/ahemanthkumar/Desktop/GSA/data/processed' filename='current_catalog_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.082ko270d88a71197b6vx1wb8ogi' name='current_catalog_cleaned.csv' table='[current_catalog_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='norad_id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='object_type' ordinal='2' />
+            <column datatype='string' name='satellite_constellation' ordinal='3' />
+            <column datatype='real' name='altitude_km' ordinal='4' />
+            <column datatype='string' name='altitude_category' ordinal='5' />
+            <column datatype='string' name='orbital_band' ordinal='6' />
+            <column datatype='string' name='congestion_risk' ordinal='7' />
+            <column datatype='real' name='inclination' ordinal='8' />
+            <column datatype='real' name='eccentricity' ordinal='9' />
+            <column datatype='integer' name='launch_year_estimate' ordinal='10' />
+            <column datatype='integer' name='days_in_orbit_estimate' ordinal='11' />
+            <column datatype='string' name='orbit_lifetime_category' ordinal='12' />
+            <column datatype='real' name='mean_motion' ordinal='13' />
+            <column datatype='datetime' name='epoch' ordinal='14' />
+            <column datatype='string' name='data_source' ordinal='15' />
+            <column datatype='date' name='snapshot_date' ordinal='16' />
+            <column datatype='string' name='country' ordinal='17' />
+            <column datatype='date' name='last_seen' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>norad_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[norad_id]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>norad_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>object_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[object_type]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>object_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>satellite_constellation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[satellite_constellation]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>satellite_constellation</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>altitude_km</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[altitude_km]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>altitude_km</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>altitude_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[altitude_category]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>altitude_category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbital_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[orbital_band]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>orbital_band</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>congestion_risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[congestion_risk]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>congestion_risk</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inclination</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[inclination]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>inclination</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eccentricity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eccentricity]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>eccentricity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>launch_year_estimate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[launch_year_estimate]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>launch_year_estimate</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_in_orbit_estimate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_in_orbit_estimate]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>days_in_orbit_estimate</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orbit_lifetime_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[orbit_lifetime_category]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>orbit_lifetime_category</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mean_motion</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mean_motion]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>mean_motion</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>epoch</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[epoch]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>epoch</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_source]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>data_source</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snapshot_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[snapshot_date]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>snapshot_date</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_seen</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_seen]</local-name>
+            <parent-name>[current_catalog_cleaned.csv]</parent-name>
+            <remote-alias>last_seen</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Satellites' datatype='integer' name='[Calculation_6314732263993345]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([norad_id])' />
+      </column>
+      <column caption='Total Countries' datatype='integer' name='[Calculation_6314732264398850]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([country])' />
+      </column>
+      <column caption='Average Mean Motion' datatype='real' name='[Calculation_6314732264480771]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([mean_motion])' />
+      </column>
+      <column caption='Average Altitude' datatype='real' name='[Calculation_6314732264534020]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([altitude_km])' />
+      </column>
+      <column caption='Average Days in Orbit' datatype='real' name='[Calculation_6314732264595461]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([days_in_orbit_estimate])' />
+      </column>
+      <column caption='Total Payloads' datatype='integer' name='[Calculation_6314732264660998]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(&#10;IF [object_type] = &quot;PAYLOAD&quot; THEN 1&#10;ELSE 0&#10;END&#10;)' />
+      </column>
+      <column caption='current_catalog_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C]' role='measure' type='quantitative' />
+      <column caption='Altitude Category' datatype='string' name='[altitude_category]' role='dimension' type='nominal' />
+      <column caption='Altitude Km' datatype='real' name='[altitude_km]' role='measure' type='quantitative' />
+      <column caption='Congestion Risk' datatype='string' name='[congestion_risk]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Data Source' datatype='string' name='[data_source]' role='dimension' type='nominal' />
+      <column caption='Days In Orbit Estimate' datatype='integer' name='[days_in_orbit_estimate]' role='measure' type='quantitative' />
+      <column caption='Eccentricity' datatype='real' name='[eccentricity]' role='measure' type='quantitative' />
+      <column caption='Epoch' datatype='datetime' name='[epoch]' role='dimension' type='ordinal' />
+      <column caption='Inclination' datatype='real' name='[inclination]' role='measure' type='quantitative' />
+      <column caption='Last Seen' datatype='date' name='[last_seen]' role='dimension' type='ordinal' />
+      <column caption='Launch Year Estimate' datatype='integer' name='[launch_year_estimate]' role='measure' type='quantitative' />
+      <column caption='Mean Motion' datatype='real' name='[mean_motion]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Norad Id' datatype='integer' name='[norad_id]' role='dimension' type='ordinal' />
+      <column caption='Object Type' datatype='string' name='[object_type]' role='dimension' type='nominal' />
+      <column caption='Orbit Lifetime Category' datatype='string' name='[orbit_lifetime_category]' role='dimension' type='nominal' />
+      <column caption='Orbital Band' datatype='string' name='[orbital_band]' role='dimension' type='nominal' />
+      <column caption='Satellite Constellation' datatype='string' name='[satellite_constellation]' role='dimension' type='nominal' />
+      <column caption='Snapshot Date' datatype='date' name='[snapshot_date]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='current_catalog_cleaned.csv' id='current_catalog_cleaned.csv_8BE6C4C424CB482280F412985875679C'>
+            <properties context=''>
+              <relation connection='textscan.082ko270d88a71197b6vx1wb8ogi' name='current_catalog_cleaned.csv' table='[current_catalog_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='norad_id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='object_type' ordinal='2' />
+                  <column datatype='string' name='satellite_constellation' ordinal='3' />
+                  <column datatype='real' name='altitude_km' ordinal='4' />
+                  <column datatype='string' name='altitude_category' ordinal='5' />
+                  <column datatype='string' name='orbital_band' ordinal='6' />
+                  <column datatype='string' name='congestion_risk' ordinal='7' />
+                  <column datatype='real' name='inclination' ordinal='8' />
+                  <column datatype='real' name='eccentricity' ordinal='9' />
+                  <column datatype='integer' name='launch_year_estimate' ordinal='10' />
+                  <column datatype='integer' name='days_in_orbit_estimate' ordinal='11' />
+                  <column datatype='string' name='orbit_lifetime_category' ordinal='12' />
+                  <column datatype='real' name='mean_motion' ordinal='13' />
+                  <column datatype='datetime' name='epoch' ordinal='14' />
+                  <column datatype='string' name='data_source' ordinal='15' />
+                  <column datatype='date' name='snapshot_date' ordinal='16' />
+                  <column datatype='string' name='country' ordinal='17' />
+                  <column datatype='date' name='last_seen' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Altitude Category Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Altitude Category' datatype='string' name='[altitude_category]' role='dimension' type='nominal' />
+            <column-instance column='[norad_id]' derivation='Count' name='[cnt:norad_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[altitude_category]' derivation='None' name='[none:altitude_category:nk]' pivot='key' type='nominal' />
+            <column caption='Norad Id' datatype='integer' name='[norad_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0furslk16n2oja138vbea10nit4j].[none:altitude_category:nk]</rows>
+        <cols>[federated.0furslk16n2oja138vbea10nit4j].[cnt:norad_id:qk]</cols>
+      </table>
+      <simple-id uuid='{7C79457D-D798-4F92-A437-40F801C25480}' />
+    </worksheet>
+    <worksheet name='Launch Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Total Satellites' datatype='integer' name='[Calculation_6314732263993345]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([norad_id])' />
+            </column>
+            <column-instance column='[norad_id]' derivation='Count' name='[cnt:norad_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Launch Year Estimate' datatype='integer' name='[launch_year_estimate]' role='measure' type='quantitative' />
+            <column-instance column='[launch_year_estimate]' derivation='None' name='[none:launch_year_estimate:ok]' pivot='key' type='ordinal' />
+            <column caption='Norad Id' datatype='integer' name='[norad_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_6314732263993345]' derivation='User' name='[usr:Calculation_6314732263993345:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0furslk16n2oja138vbea10nit4j].[cnt:norad_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732263993345:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.0furslk16n2oja138vbea10nit4j].[cnt:norad_id:qk] + [federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732263993345:qk])</rows>
+        <cols>[federated.0furslk16n2oja138vbea10nit4j].[none:launch_year_estimate:ok]</cols>
+      </table>
+      <simple-id uuid='{98A6F27B-B401-4082-929A-F80DD2EF969E}' />
+    </worksheet>
+    <worksheet name='Object Type Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column-instance column='[norad_id]' derivation='Count' name='[cnt:norad_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[object_type]' derivation='None' name='[none:object_type:nk]' pivot='key' type='nominal' />
+            <column caption='Norad Id' datatype='integer' name='[norad_id]' role='dimension' type='ordinal' />
+            <column caption='Object Type' datatype='string' name='[object_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0furslk16n2oja138vbea10nit4j].[none:object_type:nk]</rows>
+        <cols>[federated.0furslk16n2oja138vbea10nit4j].[cnt:norad_id:qk]</cols>
+      </table>
+      <simple-id uuid='{38542FBA-19E1-47D8-8E54-9F21CCEA5348}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Total Satellites' datatype='integer' name='[Calculation_6314732263993345]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([norad_id])' />
+            </column>
+            <column caption='Norad Id' datatype='integer' name='[norad_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_6314732263993345]' derivation='User' name='[usr:Calculation_6314732263993345:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732263993345:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontsize='16'>Total Satellites</run>
+                <run fontalignment='0'>Æ&#10;&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='28'><![CDATA[<[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732263993345:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D916CDCC-4844-4544-87B2-7C34B1A05239}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Total Countries' datatype='integer' name='[Calculation_6314732264398850]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([country])' />
+            </column>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Calculation_6314732264398850]' derivation='User' name='[usr:Calculation_6314732264398850:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264398850:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontsize='16'>Total Countries</run>
+                <run fontalignment='0'>Æ&#10;&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='28'><![CDATA[<[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264398850:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B17472DC-221D-474A-8069-19FD9DB371A5}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (3)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Total Payloads' datatype='integer' name='[Calculation_6314732264660998]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(&#10;IF [object_type] = &quot;PAYLOAD&quot; THEN 1&#10;ELSE 0&#10;END&#10;)' />
+            </column>
+            <column caption='Object Type' datatype='string' name='[object_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_6314732264660998]' derivation='User' name='[usr:Calculation_6314732264660998:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264660998:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontsize='16'>Total Payloads</run>
+                <run fontalignment='0'>Æ&#10;&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='28'><![CDATA[<[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264660998:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{94388752-FCCE-4220-90D6-A7EF06F1A2C3}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (4)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Average Mean Motion' datatype='real' name='[Calculation_6314732264480771]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([mean_motion])' />
+            </column>
+            <column caption='Mean Motion' datatype='real' name='[mean_motion]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6314732264480771]' derivation='User' name='[usr:Calculation_6314732264480771:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264480771:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontsize='16'>Average Mean Motion</run>
+                <run fontalignment='0'>Æ&#10;&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='28'><![CDATA[<[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264480771:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5882BD43-CA8E-4BFE-95DA-7898FA87DC55}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (5)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Average Altitude' datatype='real' name='[Calculation_6314732264534020]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([altitude_km])' />
+            </column>
+            <column caption='Altitude Km' datatype='real' name='[altitude_km]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6314732264534020]' derivation='User' name='[usr:Calculation_6314732264534020:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264534020:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontsize='16'>Average Altitude</run>
+                <run fontalignment='0'>Æ&#10;&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='28'><![CDATA[<[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264534020:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AF2A3066-1904-4BED-8AD7-AC67B2233CAA}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (6)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='current_catalog_cleaned' name='federated.0furslk16n2oja138vbea10nit4j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0furslk16n2oja138vbea10nit4j'>
+            <column caption='Average Days in Orbit' datatype='real' name='[Calculation_6314732264595461]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([days_in_orbit_estimate])' />
+            </column>
+            <column caption='Days In Orbit Estimate' datatype='integer' name='[days_in_orbit_estimate]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_6314732264595461]' derivation='User' name='[usr:Calculation_6314732264595461:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264595461:qk]' included-values='all' />
+          <slices>
+            <column>[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264595461:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264595461:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontsize='16'>Average Days In Orbit</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontsize='26'><![CDATA[<[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264595461:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{20EF53BF-0C21-4A69-88FF-F580D30C8D97}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1203B84F-63DA-4311-B99A-0988EB040C5F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='33250' id='3' name='Sheet 1' show-title='false' w='33300' x='300' y='750' />
+        <zone h='34125' id='4' name='Sheet 1 (2)' show-title='false' w='33300' x='58700' y='1125' />
+        <zone h='33250' id='5' name='Sheet 1 (3)' show-title='false' w='33300' x='30300' y='1125' />
+        <zone h='33250' id='6' name='Sheet 1 (4)' show-title='false' w='33300' x='27800' y='30375' />
+        <zone h='33250' id='7' name='Sheet 1 (5)' show-title='false' w='33300' x='100' y='30500' />
+        <zone h='33250' id='8' name='Sheet 1 (6)' show-title='false' w='33300' x='56700' y='29750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='266' h='33250' id='3' is-fixed='true' name='Sheet 1' show-title='false' w='33300' x='300' y='750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='5' is-fixed='true' name='Sheet 1 (3)' show-title='false' w='33300' x='30300' y='1125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='34125' id='4' is-fixed='true' name='Sheet 1 (2)' show-title='false' w='33300' x='58700' y='1125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='8' is-fixed='true' name='Sheet 1 (6)' show-title='false' w='33300' x='56700' y='29750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='6' is-fixed='true' name='Sheet 1 (4)' show-title='false' w='33300' x='27800' y='30375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='7' is-fixed='true' name='Sheet 1 (5)' show-title='false' w='33300' x='100' y='30500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{32610519-FC5F-4E35-B1AC-F5CC303B2A52}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Overview'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='33250' id='3' name='Sheet 1' w='33300' x='1100' y='5750' />
+        <zone h='33250' id='4' name='Sheet 1 (2)' w='33300' x='34700' y='5000' />
+        <zone h='33250' id='5' name='Sheet 1 (3)' w='33300' x='69300' y='4375' />
+        <zone h='33250' id='6' name='Sheet 1 (4)' w='33300' x='1000' y='38875' />
+        <zone h='33250' id='7' name='Sheet 1 (5)' w='33300' x='35000' y='38500' />
+        <zone h='33250' id='8' name='Sheet 1 (6)' w='33300' x='66200' y='38750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{626A314B-10E6-4071-89EA-289D5C03BDD2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{41243FAE-686C-4E42-B12C-9A9B8DF6C770}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{17901F91-1B6B-4D1E-AFD0-47CCA2250AFF}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6732EAE7-E4C2-4838-81BC-74DD6164C6C3}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF5FAAEE-28B5-4582-9162-7D49E4A9675B}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (5)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9FC00771-8F51-4919-A1EF-5CD5E81C15C3}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (6)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0furslk16n2oja138vbea10nit4j].[usr:Calculation_6314732264595461:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95DCDE4F-6855-4DE3-972B-599E3D1359E1}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 1 (2)' />
+        <viewpoint name='Sheet 1 (3)' />
+        <viewpoint name='Sheet 1 (4)' />
+        <viewpoint name='Sheet 1 (5)' />
+        <viewpoint name='Sheet 1 (6)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DAA894F5-3C6F-476D-8186-CF5710BC3855}' />
+    </window>
+    <window class='dashboard' name='Overview'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+        <viewpoint name='Sheet 1 (2)' />
+        <viewpoint name='Sheet 1 (3)' />
+        <viewpoint name='Sheet 1 (4)' />
+        <viewpoint name='Sheet 1 (5)' />
+        <viewpoint name='Sheet 1 (6)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{7E0E0300-6D97-4BE5-9969-C8A5F233D3C4}' />
+    </window>
+    <window class='worksheet' name='Object Type Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AAD552CF-A681-412C-9FEF-A9E5AD4DC4E8}' />
+    </window>
+    <window class='worksheet' name='Altitude Category Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1EB0A580-96A3-4B7B-A2F0-34264AE57BB5}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{10EF0935-AE70-461D-9856-62FCD8795E5A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Launch Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32FB9F71-CDD2-4C48-8BD6-2BB128B9F7D3}' />
+    </window>
+  </windows>
+</workbook>

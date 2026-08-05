@@ -446,3 +446,69 @@ Created KPI calculations:
 - Formatted KPI cards for better readability.
 
 ---
+
+# Day 17 – Interactive Dashboard Development
+
+## Objective
+Built an interactive Tableau dashboard to analyze satellite population data using multiple visualizations and dashboard filters.
+
+## Dashboard Components
+- Satellites by Object Type
+- Satellites by Orbit Category
+- Orbital Eccentricity Analysis
+- Interactive Filters
+  - Object Type
+  - Altitude Category
+  - Eccentricity Range
+
+## Skills Practiced
+- Dashboard Design
+- Interactive Filters
+- Dashboard Layout
+- Business Storytelling
+- Data Visualization
+
+## Deliverables
+- Interactive Tableau Dashboard
+- Dashboard Screenshot
+- Packaged Tableau Workbook (.twbx)
+
+---
+
+# Day 18 – Dashboard Enhancement & Business Storytelling
+
+## Objective
+Enhanced the dashboard by improving readability, adding business insights, and polishing the overall presentation.
+
+## Improvements Made
+- Added meaningful dashboard title
+- Renamed chart titles
+- Added Business Summary
+- Added Key Insight callouts
+- Improved dashboard spacing and alignment
+- Verified accessibility (readable fonts, consistent colors)
+- Added interactive filters
+- Exported dashboard screenshot
+- Saved packaged workbook (.twbx)
+
+## Dashboard Features
+- Satellites by Object Type
+- Satellites by Orbit Category
+- Orbital Eccentricity Analysis
+- Interactive Filters
+- Business Summary
+- Key Insights
+
+## Files Generated
+- Satellite_Population_Analysis.twbx
+- Satellite_Population_Dashboard.png
+
+## Skills Learned
+- Business Storytelling
+- Dashboard Formatting
+- Dashboard Accessibility
+- Tableau Dashboard Design
+- Insight Presentation
+
+---
+
