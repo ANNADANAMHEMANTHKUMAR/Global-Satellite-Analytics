@@ -1,6 +1,5 @@
 # Global Satellite Analytics with Space Sustainability
 
-## Repository Structure
 
 ## Repository Structure
 
