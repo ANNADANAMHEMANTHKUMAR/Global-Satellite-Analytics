@@ -2,34 +2,43 @@
 
 ## Repository Structure
 
-data/
-├── raw/
-├── processed/
+## Repository Structure
 
-docs/
-├── business_mapping.md
-├── cleaning_plan_v1.md
-├── data_dictionary_v1.md
-
-notebooks/
-├── 01_clean.ipynb
-├── 02_eda.ipynb
-├── 03_descriptive_stats.ipynb
-├── 04_correlation_analysis.ipynb
-├── 06_data_cleaning.ipynb
-
-sql/
-├── analysis.sql
-├── schema.sql
-├── views.sql
-├── window_functions.sql
-
-dashboard/
-└── tableau/
-
-screenshots/
-
-README.md
+```text
+Global-Satellite-Analytics/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── docs/
+│   ├── business_mapping.md
+│   ├── cleaning_plan_v1.md
+│   ├── data_dictionary_v1.md
+│   ├── dataset_validation.md
+│   └── ...
+│
+├── notebooks/
+│   ├── 01_clean.ipynb
+│   ├── 01_dataset_validation.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_descriptive_stats.ipynb
+│   ├── 04_correlation_analysis.ipynb
+│   └── 06_data_cleaning.ipynb
+│
+├── sql/
+│   ├── analysis.sql
+│   ├── schema.sql
+│   ├── views.sql
+│   └── window_functions.sql
+│
+├── dashboard/
+│   └── tableau/
+│
+├── screenshots/
+│
+└── README.md
+```
 
 
 ## Dashboard Deliverables
