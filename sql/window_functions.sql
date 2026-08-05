@@ -1,3 +1,9 @@
+-- =========================================================
+-- File: window_functions.sql
+-- Purpose: Demonstrates SQL window functions for ranking,
+-- cumulative analysis, and advanced satellite insights.
+-- =========================================================
+
 USE satellite_db;
 
 SELECT

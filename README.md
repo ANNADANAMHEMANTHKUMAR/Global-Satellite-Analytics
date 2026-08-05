@@ -1,5 +1,54 @@
 # Global Satellite Analytics with Space Sustainability
 
+## Repository Structure
+
+data/
+├── raw/
+├── processed/
+
+docs/
+├── business_mapping.md
+├── cleaning_plan_v1.md
+├── data_dictionary_v1.md
+
+notebooks/
+├── 01_clean.ipynb
+├── 02_eda.ipynb
+├── 03_descriptive_stats.ipynb
+├── 04_correlation_analysis.ipynb
+├── 06_data_cleaning.ipynb
+
+sql/
+├── analysis.sql
+├── schema.sql
+├── views.sql
+├── window_functions.sql
+
+dashboard/
+└── tableau/
+
+screenshots/
+
+README.md
+
+
+## Dashboard Deliverables
+
+- Interactive Tableau Dashboard (.twbx)
+- Dashboard Screenshot (.png)
+- Business Insights
+- Interactive Filters
+- KPI Analysis
+
+## Technologies
+
+- Python
+- Pandas
+- SQL (MySQL)
+- Tableau
+- Excel
+- Git & GitHub
+
 ## Project Overview
 This project analyzes the Global Satellite Analytics dataset to study satellite distribution, orbital congestion, sustainability, and operational insights using Excel, SQL, Python, and Power BI.
 
@@ -560,7 +609,6 @@ Document the key business insights, project limitations, and data cleaning proce
 | 7 | Saved cleaned dataset | Ready for analysis and visualization |
 
 
-
 ## Before and After Cleaning
 
 | Metric | Value |
@@ -570,3 +618,105 @@ Document the key business insights, project limitations, and data cleaning proce
 | Duplicates Removed | 0 |
 | Missing Values Handled | Yes |
 | Final Dataset Status | Clean and analysis-ready |
+
+## Future Improvements
+
+- Add real-time satellite data updates.
+- Build predictive models for satellite congestion.
+- Publish the dashboard online.
+- Integrate additional space sustainability datasets.
+
+## Project Status
+
+✅ Completed (20-Day Global Satellite Analytics Project)
+
+The project includes data cleaning, SQL analysis, Python analysis, Tableau dashboard development, business insights, and complete documentation.
+
+---
+
+# Dashboard Documentation
+
+## Dashboard Purpose
+
+The Satellite Population Analysis Dashboard provides an interactive overview of the global satellite population. It helps users explore satellite distributions, orbital characteristics, and key performance indicators for better understanding of space asset trends.
+
+## Dashboard Pages
+
+### Main Dashboard
+Displays the overall satellite population with interactive filters and business insights.
+
+### Object Type Analysis
+Shows the distribution of satellites by object type such as Payload, Debris, and Rocket Body.
+
+### Orbit Category Analysis
+Visualizes satellite distribution across orbital regions including LEO, MEO, GEO, and Beyond GEO.
+
+### Orbital Eccentricity Analysis
+Shows the eccentricity distribution to understand orbit stability.
+
+## KPI Definitions
+
+**Total Satellites**
+- Total number of satellite records available in the dataset.
+
+**Total Countries**
+- Number of unique countries operating satellites.
+
+**Payload Count**
+- Total satellites classified as Payload.
+
+**Debris Count**
+- Total satellites classified as Debris.
+
+**Average Mean Motion**
+- Average orbital revolutions completed per day by satellites.
+
+## Dashboard Filters
+
+- Object Type
+- Orbit Category
+- Country
+
+These filters allow users to interactively explore the dataset.
+
+
+---
+
+# Day 20 – Final Documentation & Portfolio Preparation
+
+## Objective
+
+Finalize the project documentation, improve code readability, and prepare the project for portfolio presentation.
+
+## Tasks Completed
+
+- Finalized the data dictionary.
+- Added purpose comments to SQL scripts.
+- Added purpose descriptions to Python notebooks.
+- Documented the Tableau dashboard pages and KPIs.
+- Verified repository structure and project documentation.
+
+## Files Updated
+
+- README.md
+- docs/data_dictionary_v1.md
+- sql/analysis.sql
+- sql/schema.sql
+- sql/views.sql
+- sql/window_functions.sql
+- notebooks/01_clean.ipynb
+- notebooks/01_dataset_validation.ipynb
+- notebooks/02_eda.ipynb
+- notebooks/03_descriptive_stats.ipynb
+- notebooks/04_correlation_analysis.ipynb
+- notebooks/06_data_cleaning.ipynb
+
+## Skills Learned
+
+- Technical Documentation
+- Project Organization
+- Dashboard Documentation
+- Portfolio Preparation
+- Code Documentation
+
+---

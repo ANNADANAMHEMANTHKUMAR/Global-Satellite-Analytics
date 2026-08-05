@@ -1,3 +1,9 @@
+-- =========================================================
+-- File: schema.sql
+-- Purpose: Creates the satellite database schema and defines
+-- the table structure for storing satellite records.
+-- =========================================================
+
 CREATE DATABASE satellite_db;
 
 USE satellite_db;

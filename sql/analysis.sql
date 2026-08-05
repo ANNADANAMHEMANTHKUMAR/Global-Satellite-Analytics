@@ -1,3 +1,9 @@
+-- =========================================================
+-- File: analysis.sql
+-- Purpose: Contains SQL queries used to analyze the satellite
+-- dataset and generate business insights and KPIs.
+-- =========================================================
+
 USE satellite_db;
 
 -- No lookup tables available in the current dataset.because we have one table.
