@@ -512,3 +512,61 @@ Enhanced the dashboard by improving readability, adding business insights, and p
 
 ---
 
+
+---
+
+# Day 19 – Business Insights & Documentation
+
+## Objective
+
+Document the key business insights, project limitations, and data cleaning process used in the Satellite Population Analysis Dashboard.
+
+## Business Insights
+
+### 1. Satellite Object Types
+- Payload satellites make up the majority of the satellite population.
+- Debris and rocket bodies represent a much smaller share compared to operational payloads.
+
+### 2. Orbit Category
+- Most satellites are concentrated in Very Low Earth Orbit (VLEO) and Low Earth Orbit (LEO).
+- Very few satellites operate in Medium Earth Orbit (MEO), Geostationary Orbit (GEO), or Beyond GEO.
+
+### 3. Orbital Eccentricity
+- Most satellites have eccentricity values close to 0.
+- This indicates that the majority of satellites follow nearly circular and stable orbits.
+
+### 4. Dashboard Value
+- Interactive filters allow users to analyze satellite distributions by object type, orbit category, and eccentricity.
+- The dashboard helps users quickly identify trends without writing SQL queries.
+
+## Dataset Limitations
+
+- The dataset represents a snapshot of satellite records and may not reflect real-time updates.
+- Some satellite records contain missing or incomplete attribute values.
+- The dashboard focuses on descriptive analysis and does not perform predictive analytics.
+- Satellite counts may change over time as new launches occur and inactive satellites are removed.
+- Results depend on the quality of the publicly available NORAD dataset.
+
+## Data Cleaning Log
+
+| Step | Action Performed | Result |
+|------|------------------|--------|
+| 1 | Loaded raw NORAD satellite dataset | Dataset imported successfully |
+| 2 | Removed duplicate records | Improved data consistency |
+| 3 | Handled missing values | Reduced incomplete records |
+| 4 | Standardized column names | Consistent naming convention |
+| 5 | Corrected data types | Numeric and categorical fields properly formatted |
+| 6 | Removed unnecessary columns | Simplified dataset |
+| 7 | Saved cleaned dataset | Ready for analysis and visualization |
+
+
+
+## Before and After Cleaning
+
+| Metric | Value |
+|--------|-------|
+| Original Rows | 16,649 (before cleaning) *if no rows were removed* |
+| Final Rows | 16,649 |
+| Duplicates Removed | 0 |
+| Missing Values Handled | Yes |
+| Final Dataset Status | Clean and analysis-ready |
