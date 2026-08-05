@@ -425,3 +425,24 @@ README.md
 ✅ Day 15 completed successfully.
 
 ---
+
+## Day 16 – Tableau KPI Dashboard
+
+### Task 1
+- Imported cleaned satellite dataset into Tableau.
+- Verified the data source and field types.
+
+### Task 2
+Created KPI calculations:
+- Total Satellites
+- Total Payloads
+- Total Countries
+- Average Altitude
+- Average Mean Motion
+- Average Days in Orbit
+
+### Task 3
+- Built a KPI dashboard displaying the six key business metrics.
+- Formatted KPI cards for better readability.
+
+---
