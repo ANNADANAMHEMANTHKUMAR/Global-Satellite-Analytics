@@ -498,7 +498,7 @@
           <style-rule element='quick-filter'>
             <format attr='title' field='[federated.0furslk16n2oja138vbea10nit4j].[none:altitude_category:nk]' value='Altitude Category'>
               <formatted-text>
-                <run fontcolor='#4e79a7'>Altitude Category</run>
+                <run bold='true' fontcolor='#4e79a7'>Altitude Category</run>
               </formatted-text>
             </format>
           </style-rule>
@@ -560,7 +560,7 @@
                 </tuple-reference>
               </visual-coordinate>
             </point>
-            <body x='-110' y='-68' />
+            <body x='-79' y='-68' />
           </annotation>
         </annotations>
       </table>
@@ -616,7 +616,7 @@
             <column caption='Object Type' datatype='string' name='[object_type]' role='dimension' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0furslk16n2oja138vbea10nit4j].[Action (Altitude Category)]'>
-            <groupfilter function='member' level='[altitude_category]' member='&quot;Very Low LEO&quot;' user:ui-action-filter='[Action2_C4F79DE08F214EEF9C7DA8AB3080E746]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[altitude_category]' user:ui-action-filter='[Action2_C4F79DE08F214EEF9C7DA8AB3080E746]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0furslk16n2oja138vbea10nit4j].[Action (Object Type)]'>
             <groupfilter function='level-members' level='[object_type]' user:ui-action-filter='[Action1_D467D079E09546E2922EFEA817B21EEE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
@@ -636,7 +636,7 @@
           <style-rule element='quick-filter'>
             <format attr='title' field='[federated.0furslk16n2oja138vbea10nit4j].[none:eccentricity:qk]' value='Eccentricity'>
               <formatted-text>
-                <run fontcolor='#4e79a7'>Eccentricity</run>
+                <run bold='true' fontcolor='#4e79a7'>Eccentricity</run>
               </formatted-text>
             </format>
           </style-rule>
@@ -762,7 +762,7 @@
             <column caption='Object Type' datatype='string' name='[object_type]' role='dimension' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0furslk16n2oja138vbea10nit4j].[Action (Altitude Category)]'>
-            <groupfilter function='member' level='[altitude_category]' member='&quot;Very Low LEO&quot;' user:ui-action-filter='[Action2_C4F79DE08F214EEF9C7DA8AB3080E746]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='level-members' level='[altitude_category]' user:ui-action-filter='[Action2_C4F79DE08F214EEF9C7DA8AB3080E746]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0furslk16n2oja138vbea10nit4j].[Action (Eccentricity)]'>
             <groupfilter function='level-members' level='[none:eccentricity:ok]' user:ui-action-filter='[Action3_C2459C0AD82A48DE855E71351847D1E8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
@@ -778,10 +778,16 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0furslk16n2oja138vbea10nit4j].[cnt:norad_id:qk]' value='54' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0furslk16n2oja138vbea10nit4j].[none:object_type:nk]' value='21' />
+          </style-rule>
           <style-rule element='quick-filter'>
             <format attr='title' field='[federated.0furslk16n2oja138vbea10nit4j].[none:object_type:nk]' value='Object Type'>
               <formatted-text>
-                <run fontcolor='#4e79a7'>Object Type</run>
+                <run bold='true' fontcolor='#4e79a7'>Object Type</run>
               </formatted-text>
             </format>
           </style-rule>
@@ -843,7 +849,7 @@
                 </tuple-reference>
               </visual-coordinate>
             </point>
-            <body x='-93' y='32' />
+            <body x='-74' y='31' />
           </annotation>
         </annotations>
       </table>
@@ -1321,70 +1327,78 @@
         <column caption='Object Type' datatype='string' name='[object_type]' role='dimension' type='nominal' />
       </datasource-dependencies>
       <zones>
-        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
-            <zone fixed-size='38' h='5750' id='15' is-fixed='true' type-v2='title' w='98400' x='800' y='1000'>
-              <zone-style>
-                <format attr='border-color' value='#000000' />
-                <format attr='border-style' value='none' />
-                <format attr='border-width' value='0' />
-                <format attr='margin' value='4' />
-              </zone-style>
-            </zone>
-            <zone h='92250' id='9' param='horz' type-v2='layout-flow' w='98400' x='800' y='6750'>
-              <zone h='92250' id='7' type-v2='layout-basic' w='82400' x='800' y='6750'>
-                <zone h='38427' id='3' name='Object Type Distribution' w='49200' x='800' y='6750'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
+        <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='4' type-v2='layout-basic' w='98400' x='800' y='1000'>
+            <zone h='96000' id='14' param='vert' type-v2='layout-flow' w='96800' x='1600' y='2000'>
+              <zone fixed-size='38' h='5750' id='15' is-fixed='true' type-v2='title' w='96800' x='1600' y='2000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90250' id='9' param='horz' type-v2='layout-flow' w='96800' x='1600' y='7750'>
+                <zone h='90250' id='7' type-v2='layout-basic' w='81700' x='1600' y='7750'>
+                  <zone h='42250' id='3' name='Object Type Distribution' w='46208' x='1600' y='7750'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='90250' id='5' name='Altitude Category Distribution' w='35492' x='47808' y='7750'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='48000' id='6' name='Eccentricity Distribution' w='46208' x='1600' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
                 </zone>
-                <zone h='92250' id='5' name='Altitude Category Distribution' w='33200' x='50000' y='6750'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='53823' id='6' name='Eccentricity Distribution' w='49200' x='800' y='45177'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
+                <zone fixed-size='151' h='90250' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='15100' x='83300' y='7750'>
+                  <zone h='15875' id='10' name='Object Type Distribution' param='[federated.0furslk16n2oja138vbea10nit4j].[none:object_type:nk]' type-v2='filter' values='database' w='15100' x='83300' y='7750'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23000' id='11' name='Altitude Category Distribution' param='[federated.0furslk16n2oja138vbea10nit4j].[none:altitude_category:nk]' type-v2='filter' values='database' w='15100' x='83300' y='23625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='8625' id='12' name='Eccentricity Distribution' param='[federated.0furslk16n2oja138vbea10nit4j].[none:eccentricity:qk]' type-v2='filter' values='database' w='15100' x='83300' y='46625'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
                 </zone>
               </zone>
-              <zone fixed-size='160' h='92250' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='6750'>
-                <zone h='15875' id='10' name='Object Type Distribution' param='[federated.0furslk16n2oja138vbea10nit4j].[none:object_type:nk]' type-v2='filter' values='database' w='16000' x='83200' y='6750'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='23000' id='11' name='Altitude Category Distribution' param='[federated.0furslk16n2oja138vbea10nit4j].[none:altitude_category:nk]' type-v2='filter' values='database' w='16000' x='83200' y='22625'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-                <zone h='8625' id='12' name='Eccentricity Distribution' param='[federated.0furslk16n2oja138vbea10nit4j].[none:eccentricity:qk]' type-v2='filter' values='database' w='16000' x='83200' y='45625'>
-                  <zone-style>
-                    <format attr='border-color' value='#000000' />
-                    <format attr='border-style' value='none' />
-                    <format attr='border-width' value='0' />
-                    <format attr='margin' value='4' />
-                  </zone-style>
-                </zone>
-              </zone>
             </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='8' />
+            </zone-style>
           </zone>
           <zone-style>
             <format attr='border-color' value='#000000' />
@@ -1393,7 +1407,7 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone forceUpdate='true' h='16625' id='16' type-v2='text' w='33400' x='50900' y='59125'>
+        <zone forceUpdate='true' h='16625' id='16' type-v2='text' w='32100' x='49800' y='58750'>
           <formatted-text>
             <run bold='true' fontcolor='#e15759' fontsize='10'>Business Summary</run>
             <run>Æ&#10;&#10;</run>
@@ -1864,7 +1878,7 @@
         </viewpoint>
         <viewpoint name='Object Type Distribution' />
       </viewpoints>
-      <active id='16' />
+      <active id='3' />
       <simple-id uuid='{2A91945D-BAC5-44AB-87F9-6AA200C953E9}' />
     </window>
   </windows>
